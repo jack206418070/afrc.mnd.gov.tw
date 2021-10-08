@@ -1,0 +1,381 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+  box-sizing: border-box;
+  font-family: PMingLiU;
+}
+
+
+.container{
+    // padding: 40px;
+    margin: 0 auto;
+    max-width: 749px;
+}
+.page{
+    .title{
+        border-bottom: 1px solid #000;
+        border-style: dashed;
+        border-width: 100%;
+        padding-bottom: 10px;
+        display: flex;
+        height: 347px;
+        line-height: 2;
+        h1{
+            font-size: 36px;
+            font-weight: bold;
+            letter-spacing: 23px;
+            margin-top: 20px;
+            flex: 0 0 50%;
+        }
+    }
+}
+.title-desc{
+    flex: 0 0 50%;
+    line-height: 1.55;
+    h2{
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+    }
+    ol{
+        font-size: 22.5px;
+    }
+}
+.middle{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #000;
+    border-style: dashed;
+    position: relative;
+    img{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        bottom: 21px;
+        left: 275px;
+    }
+}
+table{
+    width: 100%;
+    .row-one{
+        .col-one{
+            width: 10%;
+            padding: 9px;
+            text-align: center;
+            letter-spacing: 6px;
+
+        }
+        .col-two{
+            width: 40%;
+            padding:9px;
+            text-align: center;
+            vertical-align: middle;
+        }
+    }
+    .row-two{
+        .col-one{
+            width: 10%;
+            padding:9px;
+            text-align: center;
+            letter-spacing: 6px;
+
+        }
+        .col-two{
+            width: 40%;
+            padding:9px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .col-three{
+            max-width: 10%;
+            padding:9px;
+            text-align: center;
+            vertical-align: middle;
+            &.date{
+                text-align:justify;
+                text-justify:distribute-all-lines;
+                text-align-last:justify;
+            }
+        }
+        .col-four{
+            width: 15%;
+            padding:9px;
+            text-align: center;
+            vertical-align: middle;
+        }
+    }
+    .row-three{
+        .col-one{
+            width: 10%;
+            padding:9px;
+            text-align: center;
+            letter-spacing: 6px;
+            vertical-align: middle;
+            &.date{
+                letter-spacing: 0;
+                font-size: 14px;
+                text-align:justify;
+                text-justify:distribute-all-lines;
+                text-align-last:justify;
+            }
+        }
+        .col-two{
+            width: 40%;
+            padding:2px;
+            text-align: center;
+            vertical-align: middle;
+            &.date{
+                line-height: 1.2;
+            }
+            &.print{
+                background: #ef8fd0;
+                @media print {
+                    -webkit-print-color-adjust: exact;    
+                    background-color:#ef8fd0!important;
+                }
+            }
+            &.print-y{
+                background: #fcfc92;
+                @media print {
+                    -webkit-print-color-adjust: exact;    
+                    background-color:#fcfc92!important;
+                }
+            }
+        }
+        .col-three{
+            width: 13%;
+            padding:2px;
+            text-align: center;
+            vertical-align: middle;
+            &.date{
+                line-height: 1.5;
+                letter-spacing: 3px;
+            }
+            &.date-2{
+                line-height: 1.5;
+                padding: 1px;
+            }
+        }
+        .col-four{
+            width: 27%;
+            padding:2px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .col-five{
+            width: 15%;
+            padding: 2px;
+            text-align: center;
+            vertical-align: middle;
+        }
+    }
+    .row-four{
+        .col-one{
+            padding: 20px 25px 20px 120px;
+        }
+    }
+}
+table{
+    border: 2px solid #000;
+}
+tr,td{
+    border: 1px solid #000;
+}
+.bottom{
+    padding-top: 10px;
+    display: flex;
+    .left{
+        padding-right: 10px;
+        flex: 0 0 50%;
+        border-right: 1px solid #000;
+        border-style: dashed;
+        border-width: 100%;
+        .col-one{
+            width: 50%;
+            text-align: center;
+            vertical-align: middle;
+            padding: 14px 5px;
+        }
+        .col-two{
+            width: 20%;
+            text-align: center;
+            vertical-align: middle;
+            padding: 10px 2px;
+            font-size: 14px;
+            &.date{
+                text-align:justify;
+                text-justify:distribute-all-lines;
+                text-align-last:justify;
+            }
+        }
+        .col-three{
+            width: 30%;
+            text-align: center;
+            vertical-align: middle;
+            padding: 10px 0px;
+            font-size: 10px;
+            &.date{
+                text-align: left;
+                padding: 10px 5px;
+            }
+        }
+    }
+    .right{
+        padding-left: 10px;
+        flex: 0 0 50%;
+        text-align: center;
+        .col-one{
+            text-align: center;
+            line-height: 1.5;
+        }
+        .col-two{
+            width: 5%;
+            text-align: center;
+            &.date{
+                padding: 0 3px;
+                line-height: 47px;
+            }
+        }
+        .col-three{
+            width: 20%;
+            text-align: center;
+        }
+        .col-four{
+            padding: 3px 5px;
+            &.date{
+                letter-spacing: 15px;
+            }
+        }
+        .col-five{
+            padding: 7px 0;
+        }
+        .col-six{
+            padding: 3px;
+            vertical-align: middle;
+            &.date{
+                text-align:justify;
+                text-justify:distribute-all-lines;
+                text-align-last:justify;
+            }
+        }
+        .col-seven{
+            width: 25%;
+            text-align: center;
+            
+        }
+    }
+}
+.page-back{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+    border-style: dashed;
+    border-width: 100%;
+    .content{
+        padding: 15px;
+        border: 2px solid #000;
+    }
+    h1{
+        font-size: 36px;
+        text-align: center;
+        letter-spacing: 10px;
+        margin-bottom: 20px;
+    }
+    .content-part{
+        display: flex;
+        font-size: 24px;
+        line-height: 1.2;
+        &.text-danger{
+            color: red;
+        }
+    }
+
+}
+.page-back-footer{
+    padding: 10px 0;
+    display: flex;
+    .page-back-footer-left{
+        flex: 0 0 50%;
+        padding-right: 10px;
+        border-right: 1px solid #000;
+        border-style: dashed;
+        border-width: 100%;
+        table{
+            border:0;
+        }
+        tr{
+            border:0;
+        }
+        .content{
+            display: flex;
+            border: 2px solid #000;
+            .table-content{
+                flex: 0 0 87%;
+                // padding: 15px 5px;
+            }
+        }
+    }
+    .page-back-footer-right{
+        flex: 0 0 50%;
+        padding-left: 10px;
+        .content{
+            border: 2px solid #000;
+            padding: 1px 15px;
+            h1{
+                font-size: 24px;
+                text-align: center;
+                letter-spacing: 15px;
+                line-height: 1.5;
+            }
+            .content-part{
+                display: flex;
+                font-size: 18px;
+                line-height: 1.2;
+                &.text-danger{
+                    color: red;
+                }
+            }
+        }
+    }
+}
